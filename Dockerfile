@@ -18,6 +18,5 @@ COPY requirements.txt /etc/requirements.txt
 RUN pip3 install -r /etc/requirements.txt
 
 WORKDIR /app
-ENTRYPOINT /bin/bash
-CMD build.sh
+CMD sh build.sh
 
