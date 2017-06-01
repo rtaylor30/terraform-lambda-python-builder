@@ -7,7 +7,7 @@ RUN apt update \
     && apt upgrade -q -y \
     && apt install -q -y python3 python3-pip curl unzip git make \
     && pip3 install --upgrade pip \
-    && pip3 install awscli \
+    && pip3 install awscli virtualenv \
     && curl -LO https://releases.hashicorp.com/terraform/0.9.6/terraform_0.9.6_linux_amd64.zip \
     && unzip terraform_0.9.6_linux_amd64.zip \
     && mv terraform /usr/bin/ \
